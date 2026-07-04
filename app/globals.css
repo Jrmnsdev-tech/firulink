@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+
+body {
+  background: linear-gradient(135deg, #F8F7F2 0%, #EFEDE4 100%);
+  color: #0A1F44;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(10, 31, 68, 0.12);
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, #D4AF37, #A8862A);
+  color: #0A1F44;
+  font-weight: 700;
+  transition: transform 0.15s ease;
+}
+.btn-gold:hover { transform: translateY(-2px); }
+
+.btn-navy {
+  background: linear-gradient(135deg, #123163, #0A1F44);
+  color: #F8F7F2;
+  font-weight: 600;
+  transition: transform 0.15s ease;
+}
+.btn-navy:hover { transform: translateY(-2px); }
+
+input, select, textarea {
+  outline: none;
+}
